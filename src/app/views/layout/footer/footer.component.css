@@ -1,0 +1,117 @@
+
+h2{
+    line-height: 66px;
+}
+
+button{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    border-radius: 3rem;
+    background-color: #DDFF00;
+    box-shadow: 0px 20px 35px rgba(255, 174, 0, 0.2);
+    height: 90%;
+    right: 2%;
+    width: 11rem;
+}
+
+footer div.py-5 {
+    background: var(--magic-bg-div);
+    border-radius: 40px;
+}
+.lasttext div{
+    box-shadow: 0px 0px 0px 1px  rgb(38, 38, 38);
+    width: 35%;
+    background-color: #0D0D0D;
+}
+input{    
+    position: relative;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+p{
+    font-size:20px ;
+    line-height: 28px;
+}
+
+p.h2{
+    font-size:60px ;
+    font-weight: 400;
+    line-height:66px ;
+}
+@media screen and (max-width: 1270px) {
+    .lasttext div{
+        width: 40%;
+    }
+    footer{
+        padding: 0 1rem !important;
+    }
+    button {
+        width: 9rem;
+    }
+    input{
+        left: 1.5rem;
+    }
+}
+@media screen and (max-width: 1010px) {
+    button{
+        width: 8rem;
+    }
+    input{
+        left: 1rem;
+    }
+}
+@media screen and (max-width: 815px) {
+    .lasttext div{
+        width: 100%;
+        position: static !important;
+        background-color: transparent !important;
+        box-shadow: 0px 0px 0px 0px  rgb(38, 38, 38 ,0);
+    }
+    button{
+        width: 100%;
+        /* height: 100%; */
+        position: static !important;
+        padding: 1.5rem 0 !important;        
+    }
+    input{
+        box-shadow: inset 0 0 0 1px  rgb(38, 38, 38) !important;
+        position: static !important;
+        margin-bottom: 1rem;
+        border: 0 !important;
+        padding: 24px 0 24px 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    input{
+        box-shadow: inset 0 0 0 1px  rgb(38, 38, 38) !important;
+        position: static;
+        margin-bottom: 1rem;
+        border: 0 !important;
+        padding: 24px 0 24px 1.5rem;
+    }
+    .lasttext div{
+        box-shadow: 0px 0px 0px 0px  rgb(38, 38, 38 ,0);
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    button{
+        font-size: 16px;
+        line-height: 16px;
+        border: 0 !important;
+    }
+    p{
+        font-size:14px ;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    p.h2{
+        font-size:51px ;
+        font-weight: 400;
+        line-height:56px ;
+    }
+}

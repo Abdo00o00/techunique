@@ -1,0 +1,55 @@
+li a {
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+li{
+    padding: 0 20px;
+}
+li:hover a {
+    color: rgb(254, 166, 16) !important;    
+}
+nav {
+    background-color: rgba(6, 7, 43, 0.9);
+
+    border-radius: 60px;
+    backdrop-filter: blur(5px);
+}
+div.grid {
+    color:rgb(254, 166, 16);
+}
+select ,option {
+    cursor: pointer;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(254, 166, 16) !important;
+    background-color: #06072B;
+
+}
+
+
+div.navbar-collapse.collapse.show {
+    display: block !important;
+    /* position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    background-color: rgba(6, 7, 43, 0.9);
+    backdrop-filter: blur(5px); */
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    #logoandbutton{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+

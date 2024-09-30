@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Technor;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("assets/font/technor-vf.woff2") format("woff2");
+}
+@font-face {
+    font-family: Tektur;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("assets/font/Tektur-VariableFont_wdthwght.ttf");
+}
+@font-face {
+    font-family: Comfortaa;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("assets/font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Sans;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("assets/font/Instrument_Sans/InstrumentSans-VariableFont_wdthwght.ttf");
+}
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("assets/font/Poppins/Poppins-Regular.ttf");
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+/*------------------------------------------------------------- start -vars- */
+:root {
+    --main-color: #FEA610;
+    --main-bg: #06072B;
+    --main-button-bg: rgb(254, 166, 16);
+    --magic-bg-div: radial-gradient(70% 150% at 50% 0%, rgb(15, 15, 15) 0%, rgb(8, 8, 8) 70%, rgb(212, 46, 0) 100%);
+
+}
+
+body,
+html {
+    font-family: Technor, sans-serif;
+}
+*:focus , *:focus-within , *:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/*------------------------------------------------------------- end -vars- */
+/* - */
+/* - */
+/* - */
+/*------------------------------------------------------------- start all the project -the main class- style starting */
+
+.nice-border {
+    border: rgba(255, 255, 255, .19) 0.75px solid !important;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: white;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+
+/*------------------------------------------------------------- end all the project -the main class- style end */
+/* - */
+/* - */
+/* - */
+/*------------------------------------------------------------- start -navbar- style starting */
+
+
+/*------------------------------------------------------------- end all the project -the main class- style end */
+/* - */
+/* - */
+/* - */
+/*------------------------------------------------------------- start -navbar- style starting */
+
+
+
+
+
+/*------------------------------------------------------------- end -navbar- style */
+/*  */
+/*  */
+/*  */
+/*------------------------------------------------------------- start the first section -home- style start */
+
+
+
+
+
+/*------------------------------------------------------------- end the first section -home- style  */
