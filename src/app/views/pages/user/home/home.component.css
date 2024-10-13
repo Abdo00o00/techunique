@@ -6,32 +6,48 @@ font-family: "Sans" , sans-serif;
 font-family: "Technor" , sans-serif;
 font-family: "Poppins" , sans-serif; 
 font-family: "Tektur" , sans-serif; 
+
 */
 /* end font familys */
 
-
 section {
-    margin-top:6.5rem ;
+  margin-top: 6.5rem;
 }
 
-form{
-    background: radial-gradient( 50% 50% at 15% 0%, rgb(40, 40, 40) 0%, rgb(2, 2, 15) 100%) ;
+form {
+  background: radial-gradient(
+    50% 50% at 15% 0%,
+    rgb(40, 40, 40) 0%,
+    rgb(2, 2, 15) 100%
+  );
 }
+
 .theStyle {
-    border: 1px solid rgba(255, 255, 255, .16);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: linear-gradient(180deg, rgba(31, 31, 31, .8) 0%, rgba(69, 69, 69, .23) 100%);
-    border-radius: 40px;
-    box-shadow: inset 0 1px 6px #fff0;
-
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 0.8) 0%,
+    rgba(69, 69, 69, 0.23) 100%
+  );
+  border-radius: 40px;
+  box-shadow: inset 0 1px 6px #fff0;
 }
+
 /* -------------------------------------------------end main style */
 /* - */
 /* - */
 /* -------------------------------------------------start section 1 h1 and skewing div and carusel */
+#Home {
+  margin-top: 13rem !important;
+  background-image: url("../../../../../assets/images/asset24.png");
+  background-repeat: repeat;
+  background-size: auto;
+    }
 
-h1, h1 span{
+    h1,
+    h1 span {
     line-height: 70px;
     font-size: 64px;
     font-weight: 700;
@@ -39,83 +55,130 @@ h1, h1 span{
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-}
+    }
 
-form span {
-    font-family:"tektur" , sans-serif;
+    form span {
+    font-family: "tektur", sans-serif;
     font-size: 11px;
     font-weight: 500;
     line-height: 14px;
-}
+    }
 
-#lift-home{
-    margin-top: 7rem;
-}
+    #Home .bigdiv ul::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    bottom: 0;
+    right: 0px;
+    backdrop-filter: blur(0px);
+    border-radius: 20px;
+    z-index: -1;
+    }
 
-#lift-home p {
+    #Home .bigdiv:hover ul::after {
+    backdrop-filter: blur(0.5px);
+    animation: blured 0.3s ease;
+    }
+
+    #Home #changeableText span.hal {
+    display: none;
+    }
+
+    #Home #changeableText:hover span.hal {
+    display: block;
+    }
+
+    #Home #changeableText span.des,
+    #Home #changeableText span.hal {
+    transition: all 0.3s ease;
+    }
+
+    #Home #changeableText:hover span.des {
+    display: none;
+    }
+
+    #lift-home p {
     line-height: 12px;
     font-size: 17px;
     font-weight: 400;
-}
+    font-family: "Comfortaa", sans-serif;
+    }
 
-#lift-home button {
-    color:rgb(6, 7, 43);
+    #lift-home button {
+    color: rgb(6, 7, 43);
     background-color: rgb(254, 166, 16);
     font-weight: 600;
     line-height: 19px;
-}
+    font-family: "Tektur", sans-serif;
+    }
 
-#lift-home svg {
+    #lift-home svg {
     align-self: center;
     padding-top: 0.2rem;
-}
+    }
 
-form li svg {
-    background-color: #2F2E2E;
+    form li svg {
+    background-color: #2f2e2e;
     border-radius: 50%;
+    }
 
-}
-
-.headform p {
+    .headform p {
     padding: 6px 16px;
     font-size: 16px !important;
     line-height: 22px !important;
     font-weight: 400;
-}
+    font-family: "Comfortaa", sans-serif;
+    }
 
-.headform {
+    .headform {
     margin-bottom: 1rem;
-}
+    }
 
-.headform >div {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-}
+    #Home .Draggable p {
+    font-family: "Sans", sans-serif;
+    }
 
-#lift-home button:hover {
+    .headform > div {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    }
+
+    #lift-home button:hover {
     background-color: #604020;
     box-shadow: rgba(255, 255, 255, 0.66) 0px 8px 43px -7px;
-}
+    }
 
-li div.borderr{
-    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 100%);
-}
+    li div.borderr {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    }
 
-li div.nice-border:hover{
-    background: linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-}
+    li div.nice-border:hover {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    }
 
-
-li div.d-shgreen {
+    li div.d-shgreen {
     border-left: rgb(9, 219, 61) 1px solid !important;
-}
-li div.d-shorange {
+    }
+
+    li div.d-shorange {
     border-left: rgb(255, 174, 0) 1px solid !important;
-}
-li div.d-shblue {
+    }
+
+    li div.d-shblue {
     border-left: rgba(59, 130, 246, 1) 1px solid !important;
-}
+    }
 
-li div.d-shgreen div.shgreen {
+    li div.d-shgreen div.shgreen {
     position: absolute;
     top: -10%;
     bottom: -10%;
@@ -126,13 +189,19 @@ li div.d-shgreen div.shgreen {
     border-radius: 100%;
     transition: all 0.2s ease;
     opacity: 0;
-    background: radial-gradient( 50% 150% at 50% 50%, rgba(9, 219, 61, 0.199) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
-}
-li div.d-shgreen:hover div.shgreen {
-    opacity: 1;
-}
+    background: radial-gradient(
+        50% 150% at 50% 50%,
+        rgba(9, 219, 61, 0.199) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    }
 
-li div.d-shorange div.shorange {
+    li div.d-shgreen:hover div.shgreen {
+    opacity: 1;
+    }
+
+    li div.d-shorange div.shorange {
     position: absolute;
     top: -10%;
     bottom: -10%;
@@ -142,14 +211,20 @@ li div.d-shorange div.shorange {
     height: 120%;
     border-radius: 100%;
     transition: all 0.2s ease;
-    background: radial-gradient( 50% 150% at 50% 50%, rgba(255, 166, 0 , 0.12) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(
+        50% 150% at 50% 50%,
+        rgba(255, 166, 0, 0.12) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
     opacity: 0;
-}
-li div.d-shorange:hover div.shorange {
-    opacity: 1;
-}
+    }
 
-li div.d-shblue div.shblue {
+    li div.d-shorange:hover div.shorange {
+    opacity: 1;
+    }
+
+    li div.d-shblue div.shblue {
     position: absolute;
     top: -10%;
     bottom: -10%;
@@ -159,125 +234,235 @@ li div.d-shblue div.shblue {
     height: 120%;
     border-radius: 100%;
     transition: all 0.2s ease;
-    background: radial-gradient( 50% 150% at 50% 50%, rgba(59, 130, 246, 0.2) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(
+        50% 150% at 50% 50%,
+        rgba(59, 130, 246, 0.2) 0%,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
     opacity: 0;
-}
-li div.d-shblue:hover div.shblue {
-    opacity: 1;
-}
+    }
 
-#Home * {
+    li div.d-shblue:hover div.shblue {
+    opacity: 1;
+    }
+
+    #Home * {
     transition: all 0.3s ease-in-out;
-}
+    }
 
-form img {
+    form img {
     width: 15px;
     height: 15px;
-}
+    }
 
-form li p {
+    form li p {
     font-size: 12px;
     line-height: 20px;
     font-weight: 400;
-}
+    }
 
-#Home form ul {
+    #Home form ul {
     margin-bottom: 19rem !important;
-}
-/* home.component.css */
+    }
 
-/* تعيين الخصائص العامة للعناصر القابلة للسحب */
-.Draggable .rounded-2 {
-    cursor: pointer; /* تغيير شكل المؤشر أثناء السحب */
-    transition: box-shadow 0.2s; /* إضافة تأثير سلس عند السحب */
-  }
-  
-  .Draggable .rounded-2:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* تأثير ظل عند التحويم */
-  }
-  
-  /* تعيين الخصائص للعناصر داخل القوائم */
-  .Draggable .row {
-    margin: 0; /* إزالة الهوامش */
-  }
-  
- .Draggable  li {
-    list-style-type: none; /* إزالة الرموز من القائمة */
-    padding: 10px; /* إضافة حشوة لتوفير مساحة حول المحتوى */
-    background-color: #f9f9f9; /* لون خلفية خفيف */
-    border: 1px solid #ddd; /* حدود خفيفة */
-    border-radius: 5px; /* زوايا مستديرة */
-    margin-bottom: 10px; 
-  }
-  
-  /* استخدام Flexbox لتحسين التخطيط */
-  .Draggable .flex-nowrap {
-    display: flex; /* استخدام Flexbox */
-    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
-  }
-  
+    #changeableText .triangle {
+    /* background-color: rgb(39, 174, 96); */
+    bottom: 60%;
+    right: 95%;
+    transform: rotateZ(315deg);
+    }
+
+    #Home #changeableText svg {
+    width: 15px;
+    background-color: transparent;
+    }
+
+    #Home #changeableText {
+    bottom: -12px;
+    right: -14px;
+    width: 70px;
+    height: 20px;
+    background-color: rgb(39, 174, 96);
+    z-index: 2;
+    }
+
+    #Home .divCarousel {
+    margin-top: 10rem;
+    }
+
+    #Home p-carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgb(6, 7, 43) 0%,
+        rgb(6, 7, 43) 3%,
+        rgba(6, 7, 43, 0) 50%,
+        rgb(6, 7, 43) 97%,
+        rgb(6, 7, 43) 100%
+    );
+    z-index: 2;
+    }
+
+    /* #Home p-carousel::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(6, 7, 43 , 0)  0% ,rgb(6, 7, 43,0 )  60% ,rgb(6, 7, 43 )  66%,rgb(6, 7, 43 ) 100%);
+        z-index: 2;
+        
+    } */
+
+    .p-carousel-indicators {
+    display: none !important;
+    }
+
+    #Home .divCarousel {
+    background-color: #06072b;
+    }
+
+    #Home .divCarousel h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Tektur", sans-serif;
+    }
+
+    /* home.component.css */
+
+    /* تعيين الخصائص العامة للعناصر القابلة للسحب */
+    .Draggable .rounded-2 {
+    cursor: pointer;
+    /* تغيير شكل المؤشر أثناء السحب */
+    transition: box-shadow 0.2s;
+    /* إضافة تأثير سلس عند السحب */
+    }
+
+    .Draggable .rounded-2:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* تأثير ظل عند التحويم */
+    }
+
+    /* تعيين الخصائص للعناصر داخل القوائم */
+    .Draggable .row {
+    margin: 0;
+    /* إزالة الهوامش */
+    }
+
+    .Draggable li {
+    list-style-type: none;
+    /* إزالة الرموز من القائمة */
+    padding: 10px;
+    /* إضافة حشوة لتوفير مساحة حول المحتوى */
+    background-color: #f9f9f9;
+    /* لون خلفية خفيف */
+    border: 1px solid #ddd;
+    /* حدود خفيفة */
+    border-radius: 5px;
+    /* زوايا مستديرة */
+    margin-bottom: 10px;
+    }
+
+    /* استخدام Flexbox لتحسين التخطيط */
+    .Draggable .flex-nowrap {
+    display: flex;
+    /* استخدام Flexbox */
+    align-items: center;
+    /* محاذاة العناصر عموديًا في المنتصف */
+    }
+
 /* -------------------------------------------------end section 1 h1 and skewing div and carusel */
 /* - */
 /* - */
 /* -------------------------------------------------start section 2 Project life Cycl */
-#lifeCycle .headLifeCycle  {
-    margin-bottom: 80px;
-}
+#lifeCycle .headLifeCycle {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  z-index: 3;
 
-#lifeCycle .headLifeCycle .headd {
+  /* margin-bottom: 80px; */
+    }
+
+    #lifeCycle .headLifeCycle .headd {
     font-size: 60px !important;
     line-height: 66px !important;
     font-weight: 400 !important;
-    font-family: "Sans" , sans-serif;
-}
-#lifeCycle .headLifeCycle p {
-    font-size: 20px ;
-    line-height: 28px ;
-    font-family: "Tektur" , sans-serif; 
-    opacity: 0.65;
-}
-/* end head */
+    font-family: "Sans", sans-serif;
+    }
 
-#lifeCycle .animatedIconHome {
+    #lifeCycle .headLifeCycle p {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Tektur", sans-serif;
+    opacity: 0.65;
+    }
+
+    /* end head */
+
+    #lifeCycle .animatedIconHome {
     border-radius: 50%;
-    width:60px ;
+    width: 60px;
     height: 60px;
     background-color: rgb(254, 166, 16);
     box-shadow: rgba(0, 0, 0, 0.467) 0.120437px 0.602187px 1.35105px -1.08333px,
-    rgba(0, 0, 0, 0.43) 0.457707px 2.28853px 5.13448px -2.16667px, rgba(0, 0, 0, 0.26) 2px 10px 22.4357px -3.25px;
-}
-/* end animateIcon */
+        rgba(0, 0, 0, 0.43) 0.457707px 2.28853px 5.13448px -2.16667px,
+        rgba(0, 0, 0, 0.26) 2px 10px 22.4357px -3.25px;
+    }
 
+    /* end animateIcon */
+    #lifeCycle .smCards {
+    margin-top: 150px;
+    }
 
-#lifeCycle .smCardd span , #lifeCycle .smCardd p  {
-    font-size: 16px ;
-    line-height: 22px;    
+    #lifeCycle .smCardd span,
+    #lifeCycle .smCardd p {
+    font-size: 16px;
+    line-height: 22px;
     opacity: 0.8;
-    font-family: "Comfortaa" , sans-serif;
-}
-#lifeCycle .smCardd h3  {
-    font-size:30px ;
-    line-height:27px ;
+    font-family: "Comfortaa", sans-serif;
+    }
+
+    #lifeCycle .smCardd h3 {
+    font-size: 30px;
+    line-height: 27px;
     opacity: 0.8;
-    font-family: "Tektur" , sans-serif; 
-}
-#lifeCycle .smCardd p  {
+    font-family: "Tektur", sans-serif;
+    }
+
+    #lifeCycle .smCardd p {
     opacity: 0.6;
-}
-#lifeCycle .smCardd {
+    }
+
+    #lifeCycle .smCardd {
     height: 270px;
-}
+    }
 
-#lifeCycle .smCardd:hover .backBg{
-    background: radial-gradient(70% 100% at 50% 0%, 
-    rgba(31, 80, 16, 0.397) 0%, rgba(31, 80, 16, 0.63) 100% );
-
+    #lifeCycle .smCardd:hover .backBg {
+    background: radial-gradient(
+        70% 100% at 50% 0%,
+        rgba(31, 80, 16, 0.397) 0%,
+        rgba(31, 80, 16, 0.63) 100%
+    );
 
     transform: translateY(0px);
-}
-#lifeCycle .smCardd .backBg{ 
-    background: radial-gradient(70% 150% at 40% 0%, 
-    rgba(31, 31, 31, 0.23) 0%, rgba(69, 69, 69, 0.8) 60%, rgba(69, 69, 69, 0) 61%,rgba(69, 69, 69, 0) 100% );
+    }
+
+    #lifeCycle .smCardd .backBg {
+    background: radial-gradient(
+        70% 150% at 40% 0%,
+        rgba(31, 31, 31, 0.23) 0%,
+        rgba(69, 69, 69, 0.8) 60%,
+        rgba(69, 69, 69, 0) 61%,
+        rgba(69, 69, 69, 0) 100%
+    );
     filter: blur(50px);
     top: 0%;
     bottom: 0%;
@@ -287,63 +472,82 @@ form li p {
     border-radius: 40px;
     z-index: -1;
     transform: translateY(-150px);
-}
+    }
 
-#lifeCycle .smCardd div.text-center{
-    border:rgba(255, 255, 255, 0.16) solid 1px ;
+    #lifeCycle .smCardd div.text-center {
+    border: rgba(255, 255, 255, 0.16) solid 1px;
     backdrop-filter: blur(10px);
-    background: linear-gradient(rgba(31, 31, 31, 0.8) 0%, rgba(69, 69, 69, 0.23) 100%);
+    background: linear-gradient(
+        rgba(31, 31, 31, 0.8) 0%,
+        rgba(69, 69, 69, 0.23) 100%
+    );
     height: 100%;
     width: 100%;
     padding: 20px;
     border-radius: 40px;
     box-shadow: rgba(255, 255, 255, 0) 0px 1px 6px 0px inset;
-}
-#lifeCycle div.VIP div.text-center{
+    }
+
+    #lifeCycle div.VIP div.text-center {
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     transition: all 0.7s ease;
+    }
 
-}
-#lifeCycle div.VIP div.backBgVIP{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.53) 50%, rgb(219, 49, 1) 83.9242%,
-    rgb(255, 133, 10) 93.3119%, rgb(255, 133, 10) 101.351%);
+    #lifeCycle div.VIP div.backBgVIP {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.53) 50%,
+        rgb(219, 49, 1) 83.9242%,
+        rgb(255, 133, 10) 93.3119%,
+        rgb(255, 133, 10) 101.351%
+    );
 
     top: -100px;
     bottom: -100px;
-    right: -100px; 
-    left:-100px;
+    right: -100px;
+    left: -100px;
     border-radius: 50%;
     transform: translateY(70%) scale(1.5);
     transition: all 1s ease;
     z-index: -1;
-}
-#lifeCycle div.VIP:hover div.backBgVIP{
-    transform: translateY(40%) scale(1.5);
-}
-#lifeCycle .buttonHome {
-    transition: all 0.3s ease-in-out;
-}
-#lifeCycle  .buttonHome:hover button{
-    background-color: #604020 !important;
+    }
 
-}
-#lifeCycle  .buttonHome:hover {
+    #lifeCycle div.VIP:hover div.backBgVIP {
+    transform: translateY(40%) scale(1.5);
+    }
+
+    #lifeCycle .buttonHome {
+    transition: all 0.3s ease-in-out;
+    }
+
+    #lifeCycle .buttonHome:hover button {
+    background-color: #604020 !important;
+    }
+
+    #lifeCycle .buttonHome:hover {
     background-color: rgba(0, 0, 0, 0) !important;
     border-radius: 38px;
     box-shadow: rgba(255, 255, 255, 0.66) 0px 8px 43px -7px;
-}
-#lifeCycle .buttonHome button{
+    }
+
+    #lifeCycle .buttonHome button {
     transition: all 0.3s ease-in-out;
     color: rgb(6, 7, 43);
     background-color: rgb(254, 166, 16) !important;
     padding: 12px 16px 12px 28px;
-}
-#lifeCycle .VIP h3{
+    }
+
+    #lifeCycle .VIP h3 {
     font-size: 40px !important;
     line-height: 36px !important;
     font-weight: 600 !important;
     opacity: 0.8 !important;
-}
+    }
+
+/* #lifeCycle {
+    transform: translateY(-100px);
+} */
 
 /* end smCard */
 
@@ -353,32 +557,37 @@ form li p {
 /* -------------------------------------------------start section images */
 
 #images .headd {
-    font-size: 60px;
-    line-height: 66px;
-    font-family: "Sans" , sans-serif;
-    font-weight: 400;
-}
-#images .headd svg{
+  font-size: 60px;
+  line-height: 66px;
+  font-family: "Sans", sans-serif;
+  font-weight: 400;
+    }
+
+    #images .headd svg {
     width: 0px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
-}
-#images .headImages:hover svg{
+    }
+
+    #images .headImages:hover svg {
     width: 40px;
     opacity: 1;
-}
-#images .headImages {
+    }
+
+    #images .headImages {
     backdrop-filter: blur(8px);
     background-color: rgba(15, 15, 15, 0.74);
     border-radius: 20px;
-    padding:  30px 20px;
-}
-#images figure {
+    padding: 30px 20px;
+    }
+
+    #images figure {
     border-radius: 40px;
     overflow: hidden;
     position: relative;
-}
-#images .imgShadow {
+    }
+
+    #images .imgShadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -388,429 +597,665 @@ form li p {
     transition: all 0.3s ease-in-out;
     transform: translateY(-10%);
     padding: 30px 30px 0 30px;
-}
-#images figure img {
-    transition: all 0.3s ease-in-out; 
+    }
+
+    #images figure img {
+    transition: all 0.3s ease-in-out;
     height: 561px;
     object-fit: cover;
-}
-#images figure:hover img {
+    }
+
+    #images figure:hover img {
     transform: scale(1.05);
-}
-#images figure:hover .imgShadow {
+    }
+
+    #images figure:hover .imgShadow {
     opacity: 1;
     transform: translateY(0%);
-    
-}
-#images figure h2 {
-    font-weight:400 ;
-    line-height:36px ;
-    font-size: 40px;
-    font-family: "Sans" , sans-serif;
-}
-#images figure span {
-    line-height:22px ;
-    font-size: 16px;
-    font-family: "Comfortaa" , sans-serif;
-}
+    }
 
-#images .linerBg {
-    background: linear-gradient( transparent 0%, rgba(0, 0, 0,1) 30%);
+    #images figure h2 {
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 40px;
+    font-family: "Sans", sans-serif;
+    }
+
+    #images figure span {
+    line-height: 22px;
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    }
+
+    #images .linerBg {
+    background: linear-gradient(
+        transparent 0%,
+        black 20%,
+        rgba(6, 7, 43, 1) 21%,
+        rgba(6, 7, 43, 1) 100%
+    );
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 500px;
+    height: 330px;
     width: 130%;
     z-index: 2;
-    
-}
+    }
+
 /* -------------------------------------------------end section images */
 /* - */
 /* - */
 /* -------------------------------------------------start section memberships */
-#Memberships span.headder  {
-    line-height: 66px;
-    font-size: 60px;
-    font-family: "Sans" , sans-serif;
-}
+#Memberships span.headder {
+  line-height: 66px;
+  font-size: 60px;
+  font-family: "Sans", sans-serif;
+    }
 
-#Memberships .buttonHome {
+    #Memberships .buttonHome {
     transition: all 0.3s ease-in-out;
-}
-#Memberships .buttonHome button{
+    }
+
+    #Memberships .buttonHome button {
     transition: all 0.3s ease-in-out;
     color: rgb(6, 7, 43);
     background-color: rgb(254, 166, 16) !important;
     padding: 12px 16px 12px 28px;
-}
-#Memberships .onRight .buttonHome:hover button{
-    background-color: white !important;
-}
+    }
 
-#Memberships .onRight {
+    #Memberships .onRight .buttonHome:hover button {
+    background-color: white !important;
+    }
+
+    #Memberships .onRight {
     transition: all 0.3s ease-in-out;
-    background:  radial-gradient(70% 150% at 50% 70%, rgb(15, 15, 15) 0%, rgb(8, 8, 8) 70%, rgb(212, 46, 0) 100%);
-}
-#Memberships .onRight button{
+    background: radial-gradient(
+        70% 150% at 50% 70%,
+        rgb(15, 15, 15) 0%,
+        rgb(8, 8, 8) 70%,
+        rgb(212, 46, 0) 100%
+    );
+    }
+
+    #Memberships .onRight button {
     background-color: white !important;
     transition: all 0.3s ease-in-out;
-    font-size:16px;
-    font-family: "Tektur" , sans-serif;
+    font-size: 16px;
+    font-family: "Tektur", sans-serif;
     line-height: 19px;
-}
+    }
 
+    #Memberships .btn-group label {
+    height: 30px;
+    }
 
-#Memberships .btn-group label {
-    height:30px;
-}
-
-#Memberships  p{
+    #Memberships p {
     font-size: 20px;
     line-height: 28px;
-    font-family: "Tektur" , sans-serif;
-}
+    font-family: "Tektur", sans-serif;
+    }
 
-#Memberships p span {
+    #Memberships p span {
     font-size: 60px;
     font-weight: 700;
     margin-right: 1rem;
     line-height: 66px;
-    font-family: "Sans" , sans-serif;
-}
+    font-family: "Sans", sans-serif;
+    }
 
-#Memberships .btn-check:checked+.btn {
+    #Memberships .btn-check:checked + .btn {
     background-color: #141416;
     background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0px, rgba(0, 0, 0, 0.05) 0px 4px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0px,
+        rgba(0, 0, 0, 0.05) 0px 4px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
     transform: none;
     transform-origin: 50% 50% 0px;
-}
+    }
 
-#Memberships .rightPartCard {
-    background:#0F0F0F;
-}
-#Memberships .heartSVG {
-    background-color: #DEFF0A;
+    #Memberships .rightPartCard {
+    background: #0f0f0f;
+    }
+
+    #Memberships .heartSVG {
+    background-color: #deff0a;
     height: 55px;
     width: 55px;
     margin-left: 9px;
+    }
 
-}
-#Memberships .leftPartCard::before {
+    #Memberships .leftPartCard::before {
     position: absolute;
     width: 100%;
     height: 120%;
     top: -50%;
     left: 0;
     content: "";
-    background: radial-gradient( 100% 100% at 30% 30%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 40%);
+    background: radial-gradient(
+        100% 100% at 30% 30%,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 40%
+    );
     z-index: -1 !important;
-}
-#Memberships .leftPartCard {
-    backdrop-filter: blur(10px) !important;
-    background: linear-gradient(180deg, rgba(31, 31, 31, .8) 0%, rgba(69, 69, 69, .23) 100%);
-    position: relative;
+    }
 
-}
-#Memberships .theCard .buttonHome:hover {
+    #Memberships .leftPartCard {
+    backdrop-filter: blur(10px) !important;
+    background: linear-gradient(
+        180deg,
+        rgba(31, 31, 31, 0.8) 0%,
+        rgba(69, 69, 69, 0.23) 100%
+    );
+    position: relative;
+    }
+
+    #Memberships .theCard .buttonHome:hover {
     background-color: rgba(0, 0, 0, 0) !important;
     border-radius: 38px;
     box-shadow: rgba(255, 255, 255, 0.66) 0px 8px 43px -7px;
     opacity: 1;
-}
-#Memberships .buttonHome:hover {
+    }
+
+    #Memberships .buttonHome:hover {
     box-shadow: rgba(250, 144, 37, 0.66) 0px 8px 43px -7px;
     background-color: rgba(0, 0, 0, 0) !important;
     border-radius: 38px;
     opacity: 1;
-}
-#Memberships .rightPartCard li::before {
-    content: '•';  
-    transform: scale(1.7);
-    color: rgb(255, 174, 0);       
-    position: absolute;
-    left: -20px;  
-} 
+    }
 
-#Memberships .leftPartCard button{
-    font-family: "Tektur" , sans-serif;
+    #Memberships .rightPartCard li::before {
+    content: "•";
+    transform: scale(1.7);
+    color: rgb(255, 174, 0);
+    position: absolute;
+    left: -20px;
+    }
+
+    #Memberships .leftPartCard button {
+    font-family: "Tektur", sans-serif;
     font-weight: 600;
     line-height: 19px;
+    }
 
-}
-#Memberships label {
-    font-family: "Sans" , sans-serif;
+    #Memberships label {
+    font-family: "Sans", sans-serif;
     line-height: 20px;
     font-size: 14px;
-}
-#Memberships .maincard h2 {
+    }
+
+    #Memberships .maincard h2 {
     font-size: 40px;
-    line-height:36px ;
+    line-height: 36px;
     font-family: "Sans", sans-serif;
     font-weight: 400 !important;
-    color: rgba(255, 255, 255, 0.8) ;
+    color: rgba(255, 255, 255, 0.8);
+    }
 
-}
-
-
-#Memberships .rightPartCard span {
+    #Memberships .rightPartCard span {
     font-size: 40px;
-    line-height:36px ;
+    line-height: 36px;
     font-family: "Sans", sans-serif;
-}
-#Memberships p.thepricemiddle {
-    color: rgba(255, 255, 255,0.6) !important;
-}
-#Memberships .rightPartCard p {
+    }
+
+    #Memberships p.thepricemiddle {
+    color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    #Memberships .rightPartCard p {
     font-size: 14px;
-    line-height:20px ;
+    line-height: 20px;
     font-family: "Tektur", sans-serif;
-}
-#Memberships p.upperrtheprice {
-    font-family: "Comfortaa" , sans-serif !important;
+    }
+
+    #Memberships p.upperrtheprice {
+    font-family: "Comfortaa", sans-serif !important;
     font-size: 16px;
     line-height: 22px;
-}
+    }
 
 /* -------------------------------------------------end section memberships */
 /* - */
 /* - */
 /* -------------------------------------------------start section 1 qustion and answer accroding */
 #FAQ .head-sec p {
-    font-size:60px ;
-    line-height: 66px;
-}
+  font-size: 51px !important;
+  line-height: 56px !important;
+  font-family: "Sans", sans-serif !important;
+    }
 
-.accordion button {
-    color: rgba(255, 255, 255, 0.8)!important;
-    font-size:28px ;
+    .accordion button {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 28px;
     font-weight: 400;
-    line-height:34px ;
+    line-height: 34px;
     padding: 0.6rem !important;
-}
+    font-family: "Sans", sans-serif !important;
+    }
 
-.accordion h2{
+    .accordion h2 {
     padding: 1.3rem;
-}
+    }
 
-.accordion-Bg{
+    .accordion-Bg {
     backdrop-filter: blur(10px) !important;
-    background: linear-gradient(rgba(31, 31, 31, 0.8) 0%, rgba(69, 69, 69, 0.23) 100%) !important;
+    background: linear-gradient(
+        rgba(31, 31, 31, 0.8) 0%,
+        rgba(69, 69, 69, 0.23) 100%
+    ) !important;
     border-radius: 32px !important;
     box-shadow: rgba(255, 255, 255, 0) 0px 1px 6px 0px inset !important;
     color: white;
-}
+    }
 
-.accordion-item {
+    .accordion-item {
     position: relative;
-}
+    }
 
-#FAQ .accordion-item::before {
+    #FAQ .accordion-item::before {
     position: absolute;
     width: 80%;
     height: 180%;
     top: 0;
     left: 0;
     content: "";
-    background: radial-gradient( 50% 120% at 35% 35%, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 40%);
+    background: radial-gradient(
+        50% 120% at 35% 35%,
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0) 40%
+    );
     /* linear-gradient(rgba(31, 31, 31, 0.8) 0%, rgba(69, 69, 69, 0.23) 100%) */
     transition: all 0.3s ease-in-out;
     border-radius: 30px;
     z-index: -5 !important;
-}
+    }
 
-#FAQ .accordion:hover .accordion-item::before {
+    #FAQ .accordion:hover .accordion-item::before {
     transform: translateX(50%);
-}
+    }
 
-div.accordion-collapse.collapse p {
+    #FAQ .accordion-body p {
     font-weight: 400;
-    Color:rgba(255, 255, 255, 0.7)!important;
-    font-Size :20px !important;
-    Line-Height:28px !important;
-}
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    }
 
-#FAQ  .accordion {  
-    --bs-accordion-border-color:none !important ;
-}
+    #FAQ .accordion {
+    --bs-accordion-border-color: none !important;
+    }
 
-.iconn ,.fa-iconn {
+    .iconn,
+    .fa-iconn {
     background-color: rgba(255, 255, 255, 0.925);
     border-radius: 2px;
     position: absolute;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
     align-self: center;
     z-index: 2 !important;
-    width: 2.3rem ;
-    height: 2px ;
+    width: 2.3rem;
+    height: 2px;
+    }
 
-}
-
-.iconn.x{
+    .iconn.x {
     /* rotate: ; */
     transform: rotate(90deg);
-}
+    }
 
-.fa-iconn {
-    width:3.2rem ;
+    .fa-iconn {
+    width: 3.2rem;
     height: 3.2rem;
     right: 12px;
     border-radius: 50%;
     background-color: rgba(21, 22, 47, 0.637);
-    box-shadow: rgba(0, 0, 0, 0.467) 0.120437px 0.602187px 1.35105px -1.08333px, 
-    rgba(0, 0, 0, 0.43) 0.457707px 2.28853px 5.13448px -2.16667px, rgba(0, 0, 0, 0.26) 2px 10px 22.4357px -3.25px;
-
-}
+    box-shadow: rgba(0, 0, 0, 0.467) 0.120437px 0.602187px 1.35105px -1.08333px,
+        rgba(0, 0, 0, 0.43) 0.457707px 2.28853px 5.13448px -2.16667px,
+        rgba(0, 0, 0, 0.26) 2px 10px 22.4357px -3.25px;
+    }
 
 /* -------------------------------------------------end section 1 qustion and answer accroding */
 /* - */
 /* - */
-/* -------------------------------------------------start responsive */
-@media screen and (max-width: 1440px) {
-    #lifeCycle .headLifeCycle p {
-        font-size: 16px ;
-        line-height: 22px ;
-    }
-}
-@media screen and (max-width: 1200px) {
-    h1 , h1 span{
-        font-size: 61px;
-        line-height: 67px;
-    }
-    #FAQ .head-sec p {
-        font-size:44px ;
-        line-height: 48px;
-    }
-    #Memberships .text-center span {
-        line-height: 44px;
-        font-size: 48px;
-    }
-    #Memberships span.headder  {
-        line-height: 48px;
-        font-size: 44px;
-    }
-    #lifeCycle .headLifeCycle .headd {
-        font-size: 44px !important;
-        line-height: 48px !important;
-    }
-    #lifeCycle .headLifeCycle p {
-        font-size: 14px ;
-        line-height: 20px ;
-    }
-    #lifeCycle .smCardd h3  {
-        font-size:24px ;
-        line-height:22px ;
-    }
-    #lifeCycle .smCardd {
-        height: 250px;
-    }
-    #images .headd {
-        font-size: 44px;
-        line-height: 48px;
-    }
-    #images figure span {
-        line-height:normal ;
-        font-size: 12px;
-    }
-    #images .headImages:hover svg{
-        width: 35px;
+/* -------------------------------------------------start section layers */
+#layers .leftIcons h2 {
+  font-size: 68px;
+  line-height: 75px;
+  font-weight: 700;
+  color: black;
+  font-family: "Poppins", sans-serif;
     }
 
+    #layers .leftIcons p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(106, 107, 110);
+    font-family: "Poppins", sans-serif;
+    }
+
+    #layers .leftIcons {
+    padding: 30px 20px;
+    height: 339px;
+    }
+
+    #layers .leftIcons img {
+    cursor: pointer;
+    }
+
+    #layers .pesoelemtop img,
+    #layers .pesoelembottom img {
+    cursor: default;
+    transform: scale(0.9);
+    }
+
+    #layers .leftIcons .pesoelemtop {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -32%;
+    top: -10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(10deg);
+    /* z-index: -1; */
+    }
+
+    #layers .leftIcons .pesoelembottom {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -60%;
+    top: 32%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    #layers .leftIcons-f {
+    align-self: center;
+    }
+
+    #layers .cardd {
+    font-family: "Poppins", sans-serif;
+    }
+
+    #layers .cardd h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    }
+
+    #layers .cardd span {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 700;
+    color: rgba(182, 180, 189, 0.2);
+    }
+
+    #layers .cardd p {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(153, 143, 143);
+    }
+
+    #layers .withscale img {
+    transform: scale(1.3);
+    }
+
+    .cardd {
+    background-color: #06072b;
+    position: sticky;
+    top: 0;
+    /* يجعل الكارد يلتصق بأعلى الشاشة */
+    z-index: 1;
+    /* transition: transform 0.000001s ease; */
+    }
+
+    .cardd:nth-child(2) {
+    z-index: 2;
+    /* الكارد الثانية ستكون أعلى */
+    }
+
+    .cardd:nth-child(3) {
+    z-index: 3;
+    /* وهكذا للكروت التالية */
+    }
+
+    .cardd:nth-child(4) {
+    z-index: 4;
+    /* وهكذا للكروت التالية */
+    }
+
+/* -------------------------------------------------end section layers */
+/* - */
+/* - */
+/* -------------------------------------------------start responsive */
+@media screen and (max-width: 1440px) {
+  #lifeCycle .headLifeCycle p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1,
+  h1 span {
+    font-size: 61px;
+    line-height: 67px;
+  }
+
+  #FAQ .head-sec p {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  #Memberships .text-center span {
+    line-height: 44px;
+    font-size: 48px;
+  }
+
+  #Memberships span.headder {
+    line-height: 48px;
+    font-size: 44px;
+  }
+
+  #lifeCycle .headLifeCycle .headd {
+    font-size: 44px !important;
+    line-height: 48px !important;
+  }
+
+  #lifeCycle .headLifeCycle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #lifeCycle .smCardd h3 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  #lifeCycle .smCardd {
+    height: 250px;
+  }
+
+  #images .headd {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  #images figure span {
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  #images .headImages:hover svg {
+    width: 35px;
+  }
+
+  #lift-home button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #layers .cardd p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 993px) {
-    /* start home section */
-    #lift-home , #lift-home p{
-        text-align: center;    
-    }
-    #lift-home button{
-        margin: 0 auto ;
-    }
-    /* end home section */
-    /* -- */
-    /* -- */
-    /* start FAQ section */
-    .head-sec{
-        width: 100% !important;
-        display: block !important;
-    }
-    .accordions {        
-        width: 100% !important;
+  /* start home section */
+  #lift-home,
+  #lift-home p {
+    text-align: center;
+  }
 
-        display: block !important;
-    }
-    /* end FAQ section */
-    div.accordion-collapse.collapse p {
-        font-weight: 400;
-        Color:rgba(255, 255, 255, 0.7)!important;
-        font-Size :14px !important;
-        Line-Height:20px !important;
-    }
+  #lift-home button {
+    margin: 0 auto;
+  }
+
+  /* end home section */
+  /* -- */
+  /* -- */
+  /* start FAQ section */
+  .head-sec {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .accordions {
+    width: 100% !important;
+
+    display: block !important;
+  }
+
+  /* end FAQ section */
+  div.accordion-collapse.collapse p {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  #lifeCycle .headLifeCycle {
+    position: unset;
+  }
+
+  #lifeCycle .smCards {
+    margin-top: normal;
+  }
 }
 
 @media screen and (max-width: 810px) {
-    /* start home section */
-    .bigdiv{
-        display:none !important;
-    }
-    h1, h1 span{
-        font-size: 54px;
-        line-height: 59px;
-    }
-    /* end home section */
-    /* - */
-    /* - */
-    /* start FAQ section */
-    .accordion button , .accordion p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-    }
-    /* end FAQ section */
-    #Memberships .text-center span {
-        line-height: 56px;
-        font-size: 51px;
-    }
-    #Memberships .buttonHome button{
-        padding: auto;
-    }
-    #Memberships span.headder  {
-        line-height: 56px;
-        font-size: 51px;
-    }
-    /* - */
-    #lifeCycle .headLifeCycle .headd {
-        font-size: 51px !important;
-        line-height: 56px !important;
-        font-weight: 400 !important;
-    }
-    #lifeCycle .smCardd p, #lifeCycle .smCardd span  {
-        font-size:14px ;
-        line-height:20px ;
-    }
-    #lifeCycle .smCardd h3  {
-        font-size:21px ;
-        line-height:19px ;
-    }
-    #lifeCycle .smCardd {
-        height: 230px;
-    }
-    #images .headd {
-        font-size: 30px;
-        line-height: 33px;
-    }
-    #images figure span {
-        line-height:20px ;
-        font-size: 14px;
-    }
-    #images .headImages:hover svg{
-        width: 25px;
-    }
+  /* start home section */
+  .bigdiv {
+    display: none !important;
+  }
+
+  h1,
+  h1 span {
+    font-size: 54px;
+    line-height: 59px;
+  }
+
+  /* end home section */
+  /* - */
+  /* - */
+  /* start FAQ section */
+  .accordion button,
+  .accordion p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* end FAQ section */
+  #Memberships .text-center span {
+    line-height: 56px;
+    font-size: 51px;
+  }
+
+  #Memberships .buttonHome button {
+    padding: auto;
+  }
+
+  #Memberships span.headder {
+    line-height: 56px;
+    font-size: 51px;
+  }
+
+  /* - */
+  #lifeCycle .headLifeCycle .headd {
+    font-size: 51px !important;
+    line-height: 56px !important;
+    font-weight: 400 !important;
+  }
+
+  #lifeCycle .smCardd p,
+  #lifeCycle .smCardd span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #lifeCycle .smCardd h3 {
+    font-size: 21px;
+    line-height: 19px;
+  }
+
+  #lifeCycle .smCardd {
+    height: 230px;
+  }
+
+  #images .headd {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  #images figure span {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  #images .headImages:hover svg {
+    width: 25px;
+  }
+
+  #layers .leftIcons h2 {
+    font-size: 28px;
+    line-height: 31px;
+  }
 }
+
 /* -------------------------------------------------end responsive */
+/* ------------------------------------------------start ainmations */
+@keyframes blured {
+  0% {
+    z-index: 3;
+    backdrop-filter: blur(0px);
+  }
 
-  
+  99% {
+    backdrop-filter: blur(1px);
+    z-index: 3;
+  }
 
-  
+  100% {
+    z-index: -1;
+  }
+}
+
+.perspective-container {
+  perspective: 1000px;
+  /* المسافة إلى الكاميرا */
+}
+
+.transform-div {
+  transition: transform 0.01s;
+  /* انتقال سلس */
+}
+
+/* ------------------------------------------------end ainmations */

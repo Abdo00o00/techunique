@@ -14,6 +14,7 @@ nav {
 
     border-radius: 60px;
     backdrop-filter: blur(5px);
+
 }
 div.grid {
     color:rgb(254, 166, 16);
@@ -26,7 +27,9 @@ select ,option {
     background-color: #06072B;
 
 }
-
+header {
+    z-index: 999;
+}
 
 div.navbar-collapse.collapse.show {
     display: block !important;
