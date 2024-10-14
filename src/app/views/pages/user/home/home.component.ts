@@ -191,11 +191,11 @@ export class HomeComponent implements OnInit {
 
       // Check if the card has reached the top of the viewport (0% or less)
       if (topPercentage <= 0) {
-        console.log(`Card ${index + 1} is at the top of the screen.`);
+        // console.log(`Card ${index + 1} is at the top of the screen.`);
         card.style.position = 'sticky';
         card.style.top = '0px'; // Stick the card at the top
       } else {
-        console.log(`Card ${index + 1}: Top percentage from viewport = ${topPercentage.toFixed(2)}%`);
+        // console.log(`Card ${index + 1}: Top percentage from viewport = ${topPercentage.toFixed(2)}%`);
         card.style.position = 'relative'; // Reset the position when it's not at the top
       }
     });
@@ -205,14 +205,19 @@ export class HomeComponent implements OnInit {
   //
   /////////////////////////////////////////////////////////////////////////////////
 
-  @ViewChild('heaDsec') headSec!: ElementRef;   // مرجع للـ div المتحرك
   @ViewChild('FAQ') faqSection!: ElementRef;    // مرجع للـ section
-
+  @ViewChild('heaDsec') headSec!: ElementRef;   // مرجع للـ div المتحرك
   isSectionVisible = false;  // حالة لتتبع ما إذا كان الـ section مرئيًا
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
+
+  // isHeadImagesVisible = false; // حالة لتتبع رؤية العنصر headImages
+  
+  
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  
   ngAfterViewInit() {
+    //start QAF
     // تعريف المراقب
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -220,14 +225,24 @@ export class HomeComponent implements OnInit {
         if (entry.isIntersecting) {
           this.isSectionVisible = true;
           this.updateDivCoordinates(); // تحديث الإحداثيات مباشرة عند ظهوره
+          // console.log('The section is visible on the screen withqaf!');
         } else {
           this.isSectionVisible = false;
+          // console.log('The section is not visible on the screen withqaf!');
         }
       });
     }, { threshold: 0.1 }); // يتم استدعاء المراقب إذا ظهر 10% من الـ section
 
     // المراقب يراقب الـ section
     observer.observe(this.faqSection.nativeElement);
+    //end QAF
+    //
+    //
+    //strat images
+
+    
+    //end images
+
   }
 
   @HostListener('window:scroll', [])
@@ -251,44 +266,54 @@ export class HomeComponent implements OnInit {
     if (window.innerWidth >= 993) {
 
       // حساب المسافة التي تم التمرير بها من أعلى الـ section
-      const scrollDistance = window.scrollY - (faqElement.offsetTop - window.innerHeight + sectionRect.height);
+      let scrollDistance = window.scrollY - (faqElement.offsetTop - window.innerHeight + sectionRect.height)  ;
+      // console.log("akoko1");
+      // console.log(scrollDistance );
+      
       
       // check if the div is in hit the bottom of the section
-      if (scrollDistance < 483 && scrollDistance > 0) {
-
-      // طباعة إحداثيات الـ div بالنسبة للشاشة
-      console.log(`إحداثيات الـ div بالنسبة للنافذة: Top: ${rect.top}, Left: ${rect.left}`);
-      
-      let fortranslate: number = 0;
-
-      // تحقق من scrollDistance وضبط fortranslate بناءً على المسافة المقطوعة
-      if (scrollDistance >= 0) {
-        console.log(`تم التمرير مسافة ${scrollDistance}px من بداية الـ section`);
-        fortranslate = scrollDistance + 20; // حساب قيمة fortranslate إذا كان scrollDistance أكبر من 0
-      }
-
-      // تطبيق translateY على الـ div باستخدام Renderer2
-      this.renderer.setStyle(headSecElement, 'transform', `translateY(${fortranslate}px)`);
+      if (scrollDistance < 485 && scrollDistance > 0) {
+        
+        // طباعة إحداثيات الـ div بالنسبة للشاشة
+        // console.log(`إحداثيات الـ div بالنسبة للنافذة: Top: ${rect.top}, Left: ${rect.left}`);
+        
+        let fortranslate: number = 0;
+        // console.log("akoko2");
+        
+        // تحقق من scrollDistance وضبط fortranslate بناءً على المسافة المقطوعة
+        if (scrollDistance > 0) {
+          // console.log(`تم التمرير مسافة ${scrollDistance}px من بداية الـ section`);
+          fortranslate = scrollDistance + 20; // حساب قيمة fortranslate إذا كان scrollDistance أكبر من 0
+          // console.log("akoko3");
+        }
+        
+        // تطبيق translateY على الـ div باستخدام Renderer2
+        this.renderer.setStyle(headSecElement, 'transform', `translateY(${fortranslate}px)`);
       }
     } else {
       // إذا كان عرض الشاشة أقل من 995px، قم بإزالة أي تحرك سابق
       this.renderer.setStyle(headSecElement, 'transform', `translateY(0)`);
+      // console.log("akoko4");
     }
-
+    
   }
-
-
-
-
-
+  //
+  //
+  //
   // end funcs for moving faq head
   //
+  //
+  //
   // start funcs for moving a head of images section
-
+  @ViewChild('headImages') headImages!: ElementRef; // مرجع للـ div
+  @ViewChild('imagesSection') imagesSection!: ElementRef; // مرجع للـ div
 
 
 
 
 
   // end funcs for moving a head of images section
+  //
+  //
+  //
 }
